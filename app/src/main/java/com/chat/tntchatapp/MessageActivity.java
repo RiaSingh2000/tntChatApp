@@ -278,8 +278,9 @@ public class MessageActivity extends AppCompatActivity {
                 Users users=dataSnapshot.getValue(Users.class);
                 if(notify) {
                     sendNotifications(receiver, users.getUserName(), msg);
-                    notify = false;
                 }
+                    notify = false;
+
             }
 
             @Override
