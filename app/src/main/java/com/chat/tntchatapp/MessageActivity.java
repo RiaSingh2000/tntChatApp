@@ -213,7 +213,7 @@ public class MessageActivity extends AppCompatActivity {
                 });
         }else {
             sendMessage(msg,userId, firebaseUser.getUid(), "");
-            Toast.makeText(this, "No image selected", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "No image selected", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -276,9 +276,10 @@ public class MessageActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Users users=dataSnapshot.getValue(Users.class);
-                if(notify)
-                    sendNotifications(receiver,users.getUserName(),msg);
-                notify=false;
+                if(notify) {
+                    sendNotifications(receiver, users.getUserName(), msg);
+                    notify = false;
+                }
             }
 
             @Override
@@ -300,6 +301,7 @@ public class MessageActivity extends AppCompatActivity {
                     Data data=new Data(firebaseUser.getUid(),userName+":"+msg,"New Notification",
                             userId,R.mipmap.ic_launcher);
 
+                    assert token != null;
                     Sender sender=new Sender(data,token.getToken());
 
                     apiService.sendNotification(sender)

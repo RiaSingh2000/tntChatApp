@@ -101,9 +101,9 @@ public class RegistryActivity extends AppCompatActivity {
                                 }
                             });
                         } else {
-                            FirebaseAuthException exception=(FirebaseAuthException)task.getException();
+                           /* FirebaseAuthException exception=(FirebaseAuthException)task.getException();
                             // If sign in fails, display a message to the user.
-                            Toast.makeText(RegistryActivity.this, "You can't register with this email or password\n"+exception, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegistryActivity.this, "You can't register with this email or password\n"+exception, Toast.LENGTH_SHORT).show();*/
 
                         }
 
