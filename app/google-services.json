@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "71015889015",
+    "firebase_url": "https://tntchatapp.firebaseio.com",
+    "project_id": "tntchatapp",
+    "storage_bucket": "tntchatapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71015889015:android:b2fe943c725152ae29ae72",
+        "android_client_info": {
+          "package_name": "com.chat.tntchatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71015889015-pful41ivma21s6oslvl3depoe0hr53a3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chat.tntchatapp",
+            "certificate_hash": "77cd423be3e26912833891c95507014cbac71520"
+          }
+        },
+        {
+          "client_id": "71015889015-2en1l9fhvkofv6e5ntv5ukh1f8s1rbna.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9RQZpot9uxALFTO1OFiyC9PRuBQ7yQmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71015889015-2en1l9fhvkofv6e5ntv5ukh1f8s1rbna.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
